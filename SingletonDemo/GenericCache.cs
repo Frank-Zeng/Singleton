@@ -23,4 +23,16 @@ namespace SingletonDemo
             return TypeTime;
         }
     }
+    
+    /*
+    public class EFPreHeating
+    {
+        using (var dbcontext = new CnblogsDbContext())
+        {
+            var objectContext = ((IObjectContextAdapter)dbcontext).ObjectContext;
+            var mappingCollection = (StorageMappingItemCollection)objectContext.MetadataWorkspace.GetItemCollection(DataSpace.CSSpace);
+            mappingCollection.GenerateViews(new List<EdmSchemaError>());
+        }
+    }
+    */
 }
